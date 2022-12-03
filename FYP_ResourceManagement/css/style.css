@@ -1,0 +1,51 @@
+﻿/* General css */
+body {
+}
+
+footer {
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+}
+
+/* GridView css */
+th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-size: 14px;
+    width: 200px;
+}
+
+td {
+    font-size: small;
+}
+
+.gv_Projects_Container {
+    margin-top: 30px;
+    font-size: medium;
+}
+
+.gridview {
+    border: 1px solid darkgrey;
+}
+
+.project_Details_Container {
+    display: grid;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.employee_Details_Container {
+    display: grid;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
