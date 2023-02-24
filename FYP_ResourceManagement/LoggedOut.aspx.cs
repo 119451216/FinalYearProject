@@ -14,11 +14,14 @@ namespace FYP_ResourceManagement
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            Session["EmployeeID"] = string.Empty;
+            Session["Username"] = string.Empty;
+            Session["AuthLvl"] = string.Empty;
         }
 
         public void btn_Login_Click(object sender, EventArgs e)
         {
+            
             Response.Redirect("~/Login.aspx");
         }
     }
