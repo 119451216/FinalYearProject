@@ -11,61 +11,61 @@ namespace FYP_ResourceManagement
 {
 
 
-    public partial class SiteMaster
+    public partial class LoggedOut
     {
 
         /// <summary>
-        /// div_Navigation control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl div_Navigation;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// li_NewProject control.
+        /// Image1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl li_NewProject;
+        protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
-        /// li_Workload control.
+        /// tbl_Login control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl li_Workload;
+        protected global::System.Web.UI.WebControls.Table tbl_Login;
 
         /// <summary>
-        /// li_Admin control.
+        /// lbl_LoginHeader control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl li_Admin;
+        protected global::System.Web.UI.WebControls.Label lbl_LoginHeader;
 
         /// <summary>
-        /// loginName control.
+        /// lbl_LoggedOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LoginName loginName;
+        protected global::System.Web.UI.WebControls.Label lbl_LoggedOut;
 
         /// <summary>
-        /// MainContent control.
+        /// btn_Login control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Button btn_Login;
     }
 }

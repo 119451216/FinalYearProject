@@ -11,7 +11,7 @@ namespace FYP_ResourceManagement
 {
 
 
-    public partial class Workload
+    public partial class RequestApproval
     {
 
         /// <summary>
@@ -24,21 +24,21 @@ namespace FYP_ResourceManagement
         protected global::System.Web.UI.WebControls.Label lbl_Header;
 
         /// <summary>
-        /// gv_Resources control.
+        /// gv_Requests control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gv_Resources;
+        protected global::System.Web.UI.WebControls.GridView gv_Requests;
 
         /// <summary>
-        /// ds_Resources control.
+        /// ds_Requests control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource ds_Resources;
+        protected global::System.Web.UI.WebControls.SqlDataSource ds_Requests;
     }
 }

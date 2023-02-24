@@ -2,13 +2,73 @@
 body {
 }
 
+.button {
+    box-shadow: 2px 2px 3px lightgrey;
+}
+
+.error {
+    color: red;
+}
+
+.nav_Logo {
+    height: 30px;
+    width: 180px;
+    margin-top: 10px;
+}
+
+.navbar {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.navStyle {
+    color: black;
+}
+
+.userNav {
+    float: right;
+    line-height: 1.3;
+}
+
+.userLoggedIn {
+    color: black;
+    font-size: medium;
+    padding-top: 15px;
+    height: 20px;
+}
+
+.btn_Logout {
+    color: black;
+    font-size: medium;
+    height: 20px;
+    text-align: center;
+}
+
+.home_Body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.index_Header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: black;
+}
+
+.index_Link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: black;
+}
+
 footer {
     background-color: whitesmoke;
     color: black;
     text-align: center;
 }
 
-/* GridView css */
+/* All Projects GridView css */
 th {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -16,7 +76,7 @@ th {
     background-color: whitesmoke;
     font-weight: bold;
     font-size: 14px;
-    width: 200px;
+    /*width: 200px;*/
 }
 
 td {
@@ -30,6 +90,20 @@ td {
 
 .gridview {
     border: 1px solid darkgrey;
+}
+
+.gv_GridviewCss {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.gv_Textbox {
+    width: 80px;
+}
+
+.gv_FooterTextbox {
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .project_Details_Container {
@@ -48,4 +122,87 @@ td {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
+}
+
+.tbl_NewProject {
+    height: 500px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.lbl_NewProject {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.lbl_NewProjectHeader {
+    margin-left: 35px;
+}
+
+.shading {
+    box-shadow: 2px 2px 3px lightgrey;
+}
+
+/* Availability CSS */
+#calendar {
+    max-width: 1100px;
+    margin: 40px auto;
+    margin-top: 20px;
+}
+
+.btn_Add {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+.ts_Input {
+    top: 50%;
+    left: 50%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.lbl_Header {
+    font-size: large;
+}
+
+.errorTitle {
+    color: red;
+    margin-left: -133px;
+    margin-right: 3px;
+}
+
+.requiredValidator {
+    color: red;
+}
+
+.imgDate {
+    float: right;
+}
+
+.optional {
+    margin-left: 3px;
+}
+
+.btn_Submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.calendarSelect {
+    width: 100px;
+    margin-top: 4px;
+}
+
+.dtp_Requests {
+    padding-left: 5px;
+    padding-right: 5px;
 }

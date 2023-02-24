@@ -45,12 +45,29 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -105,15 +122,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="RequestApproval.aspx" />
+    <Content Include="css\login.css" />
     <Content Include="EmployeeDetails.aspx" />
     <Content Include="img\icons\close_FILL1_wght400_GRAD0_opsz20.png" />
     <Content Include="img\icons\done_FILL1_wght400_GRAD0_opsz20.png" />
     <Content Include="img\icons\edit_FILL1_wght400_GRAD0_opsz20.png" />
+    <Content Include="img\icons\save_FILL1_wght400_GRAD0_opsz24.png" />
+    <Content Include="img\NeoDyne-Logo.png" />
+    <Content Include="LoggedOut.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="ProjectDetails.aspx" />
     <Content Include="Availability.aspx" />
     <Content Include="css\style.css" />
     <Content Include="img\icons\baseline_create_new_folder_black_24dp.png" />
     <Content Include="img\icons\baseline_description_black_24dp.png" />
+    <Content Include="Scripts\index.global.js" />
+    <Content Include="Scripts\index.global.min.js" />
+    <Content Include="Scripts\jquery-Availability.js" />
     <Content Include="Workload.aspx" />
     <Content Include="EmployeeList.aspx" />
     <Content Include="NewProject.aspx" />
@@ -135,6 +161,18 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\Roboto-Black.ttf" />
+    <Content Include="fonts\Roboto-BlackItalic.ttf" />
+    <Content Include="fonts\Roboto-Bold.ttf" />
+    <Content Include="fonts\Roboto-BoldItalic.ttf" />
+    <Content Include="fonts\Roboto-Italic.ttf" />
+    <Content Include="fonts\Roboto-Light.ttf" />
+    <Content Include="fonts\Roboto-LightItalic.ttf" />
+    <Content Include="fonts\Roboto-Medium.ttf" />
+    <Content Include="fonts\Roboto-MediumItalic.ttf" />
+    <Content Include="fonts\Roboto-Regular.ttf" />
+    <Content Include="fonts\Roboto-Thin.ttf" />
+    <Content Include="fonts\Roboto-ThinItalic.ttf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -171,12 +209,37 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RequestApproval.aspx.cs">
+      <DependentUpon>RequestApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestApproval.aspx.designer.cs">
+      <DependentUpon>RequestApproval.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeDetails.aspx.cs">
       <DependentUpon>EmployeeDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EmployeeDetails.aspx.designer.cs">
       <DependentUpon>EmployeeDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeList.aspx.designer.cs">
+      <DependentUpon>EmployeeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Employee.cs" />
+    <Compile Include="LoggedOut.aspx.cs">
+      <DependentUpon>LoggedOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoggedOut.aspx.designer.cs">
+      <DependentUpon>LoggedOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProjectDetails.aspx.cs">
       <DependentUpon>ProjectDetails.aspx</DependentUpon>
@@ -202,9 +265,6 @@
     <Compile Include="EmployeeList.aspx.cs">
       <DependentUpon>EmployeeList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EmployeeList.aspx.designer.cs">
-      <DependentUpon>EmployeeList.aspx</DependentUpon>
     </Compile>
     <Compile Include="NewProject.aspx.cs">
       <DependentUpon>NewProject.aspx</DependentUpon>
