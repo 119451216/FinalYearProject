@@ -24,6 +24,33 @@ namespace FYP_ResourceManagement
         protected global::System.Web.UI.WebControls.Label lbl_Header;
 
         /// <summary>
+        /// tbl_NewProject control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTable tbl_NewProject;
+
+        /// <summary>
+        /// lbl_RepeatCustomer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_RepeatCustomer;
+
+        /// <summary>
+        /// chk_RepeatCustomer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chk_RepeatCustomer;
+
+        /// <summary>
         /// lbl_ProjectID control.
         /// </summary>
         /// <remarks>
@@ -114,6 +141,15 @@ namespace FYP_ResourceManagement
         protected global::System.Web.UI.WebControls.TextBox txt_ProjectTitle;
 
         /// <summary>
+        /// lbl_ProjectTitle_Error control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_ProjectTitle_Error;
+
+        /// <summary>
         /// lbl_Customer control.
         /// </summary>
         /// <remarks>
@@ -130,6 +166,15 @@ namespace FYP_ResourceManagement
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_ProjectCustomer;
+
+        /// <summary>
+        /// lbl_ProjectCustomer_Error control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_ProjectCustomer_Error;
 
         /// <summary>
         /// lbl_InitiatedBy control.
@@ -222,6 +267,15 @@ namespace FYP_ResourceManagement
         protected global::System.Web.UI.WebControls.TextBox txt_HoursExpected;
 
         /// <summary>
+        /// lbl_HoursExpected_Error control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_HoursExpected_Error;
+
+        /// <summary>
         /// btn_Add control.
         /// </summary>
         /// <remarks>
@@ -229,6 +283,240 @@ namespace FYP_ResourceManagement
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_Add;
+
+        /// <summary>
+        /// tbl_NewProject_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTable tbl_NewProject_Repeat;
+
+        /// <summary>
+        /// lbl_Customer_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_Customer_Repeat;
+
+        /// <summary>
+        /// ddl_Customer_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_Customer_Repeat;
+
+        /// <summary>
+        /// lbl_ProjectNumber_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_ProjectNumber_Repeat;
+
+        /// <summary>
+        /// ddl_ProjectNumber_Filter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_ProjectNumber_Filter;
+
+        /// <summary>
+        /// lbl_ProjectSubNumber_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_ProjectSubNumber_Repeat;
+
+        /// <summary>
+        /// txt_ProjectSubNumber_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_ProjectSubNumber_Repeat;
+
+        /// <summary>
+        /// lbl_ProjectID_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_ProjectID_Repeat;
+
+        /// <summary>
+        /// txt_ProjectID_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_ProjectID_Repeat;
+
+        /// <summary>
+        /// lbl_ProjectGroup_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_ProjectGroup_Repeat;
+
+        /// <summary>
+        /// ddl_ProjectGroup_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_ProjectGroup_Repeat;
+
+        /// <summary>
+        /// lbl_ProjectTitle_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_ProjectTitle_Repeat;
+
+        /// <summary>
+        /// txt_Title_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_Title_Repeat;
+
+        /// <summary>
+        /// lbl_Title_Repeat_Error control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_Title_Repeat_Error;
+
+        /// <summary>
+        /// lbl_InitiatedBy_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_InitiatedBy_Repeat;
+
+        /// <summary>
+        /// ddl_InitiatedBy_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_InitiatedBy_Repeat;
+
+        /// <summary>
+        /// lbl_ReviewedBy_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_ReviewedBy_Repeat;
+
+        /// <summary>
+        /// ddl_ReviewedBy_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_ReviewedBy_Repeat;
+
+        /// <summary>
+        /// lbl_Charge_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_Charge_Repeat;
+
+        /// <summary>
+        /// ddl_Charge_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_Charge_Repeat;
+
+        /// <summary>
+        /// lbl_Status_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_Status_Repeat;
+
+        /// <summary>
+        /// ddl_Status_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_Status_Repeat;
+
+        /// <summary>
+        /// lbl_HoursExpected_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_HoursExpected_Repeat;
+
+        /// <summary>
+        /// txt_HoursExpected_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_HoursExpected_Repeat;
+
+        /// <summary>
+        /// lbl_HoursExpected_Repeat_error control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_HoursExpected_Repeat_error;
+
+        /// <summary>
+        /// btn_Add_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Add_Repeat;
 
         /// <summary>
         /// ds_Group control.
@@ -240,6 +528,24 @@ namespace FYP_ResourceManagement
         protected global::System.Web.UI.WebControls.SqlDataSource ds_Group;
 
         /// <summary>
+        /// ds_ProjectNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource ds_ProjectNumber;
+
+        /// <summary>
+        /// ds_ProjectNumber_Filter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource ds_ProjectNumber_Filter;
+
+        /// <summary>
         /// ds_Employee control.
         /// </summary>
         /// <remarks>
@@ -247,6 +553,15 @@ namespace FYP_ResourceManagement
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource ds_Employee;
+
+        /// <summary>
+        /// ds_Customers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource ds_Customers;
 
         /// <summary>
         /// ds_Charge control.

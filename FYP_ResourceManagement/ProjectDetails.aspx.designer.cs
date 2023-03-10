@@ -24,6 +24,15 @@ namespace FYP_ResourceManagement
         protected global::System.Web.UI.WebControls.HiddenField hdn_ProjectID;
 
         /// <summary>
+        /// lbl_ProjectHeader control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_ProjectHeader;
+
+        /// <summary>
         /// lbl_ProjectTitle_Header control.
         /// </summary>
         /// <remarks>

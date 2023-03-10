@@ -13,6 +13,28 @@ namespace FYP_ResourceManagement
         protected void Page_Load(object sender, EventArgs e)
         {
             runAuthLevel();
+
+            int authLvl = Convert.ToInt32(Session["AuthLvl"]);
+
+            if (authLvl == 0 || authLvl == 3 || authLvl == 4)
+            {
+                lbl_ProjectHeader.Text = Session["Customer"] + " " + Session["ProjectNumber"].ToString() + "." + Session["ProjectSubNumber"].ToString() + " - " + Session["ProjectTitle"].ToString() + ":";
+
+                hdn_ProjectID.Value = Session["ProjectID"].ToString();
+                lbl_ProjectGroup.Text = Session["Group"].ToString();
+                lbl_ProjectNumber.Text = Session["ProjectNumber"].ToString();
+                lbl_ProjectSubNumber.Text = Session["ProjectSubNumber"].ToString();
+                lbl_ProjectTitle.Text = Session["ProjectTitle"].ToString();
+                lbl_Customer.Text = Session["Customer"].ToString();
+                lbl_InitiatedBy.Text = Session["InitiatedBy"].ToString();
+                lbl_ReviewedBy.Text = Session["ReviewedBy"].ToString();
+                lbl_Charge.Text = Session["ProjectCharge"].ToString();
+                lbl_Status.Text = Session["ProjectStatus"].ToString();
+                lbl_Department.Text = Session["Department"].ToString();
+                lbl_ResourcesAllocated.Text = Session["TotalResourcesAllocated"].ToString();
+                decimal percentComplete = Convert.ToDecimal(Session["PercentComplete"].ToString());
+                lbl_PercentComplete.Text = Convert.ToString(Math.Round(percentComplete, 2));
+            }
         }
 
         private void runAuthLevel()

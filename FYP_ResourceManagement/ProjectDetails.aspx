@@ -7,41 +7,69 @@
     <!-- Projects Details Container -->
     <div class="project_Details_Container">
 
-                    <asp:Label runat="server" ID="lbl_ProjectTitle_Header" Text="Title:" />
-                    <asp:Label runat="server" ID="lbl_ProjectTitle" Text='<%# Eval("ProjectTitle") %>' />
+        <h2>
+            <asp:Label runat="server" ID="lbl_ProjectHeader" CssClass="projectDetails_Header" Font-Bold="true" />
+        </h2>
 
+        <div class="projectDetails">
+            <asp:Label runat="server" ID="lbl_ProjectTitle_Header" Text="Title:" />
+            <asp:Label runat="server" ID="lbl_ProjectTitle" Text='' CssClass="projectDetailsInfo_Title" Font-Bold="false" />
+        </div>
+            <br />
+        <div class="projectDetails">
                     <asp:Label runat="server" ID="lbl_ProjectGroup_Header" Text="Group:" />
-                    <asp:Label runat="server" ID="lbl_ProjectGroup" Text='<%# Eval("ProjectGroup") %>' />
-
+                    <asp:Label runat="server" ID="lbl_ProjectGroup" Text='' CssClass="projectDetailsInfo_Group" Font-Bold="false" />
+        </div>
+            <br />
+        <div class="projectDetails">
                     <asp:Label runat="server" ID="lbl_ProjectNumber_Header" Text="Project Number:" />
-                    <asp:Label runat="server" ID="lbl_ProjectNumber" Text='<%# Eval("ProjectNumber") %>' />
-
+                    <asp:Label runat="server" ID="lbl_ProjectNumber" Text='' CssClass="projectDetailsInfo_Number" Font-Bold="false" />
+        </div>
+            <br />
+        <div class="projectDetails">
                     <asp:Label runat="server" ID="lbl_ProjectSubNumber_Header" Text="Project Sub Number:" />
-                    <asp:Label runat="server" ID="lbl_ProjectSubNumber" Text='<%# Eval("ProjectSubNumber") %>' />
-
+                    <asp:Label runat="server" ID="lbl_ProjectSubNumber" Text='' CssClass="projectDetailsInfo_SubNumber" Font-Bold="false" />
+        </div>
+            <br />
+        <div class="projectDetails">
                     <asp:Label runat="server" ID="lbl_InitiatedBy_Header" Text="Initiated By:" />
-                    <asp:Label runat="server" ID="lbl_InitiatedBy" Text='<%# Eval("InitiatedBy") %>' />
-
+                    <asp:Label runat="server" ID="lbl_InitiatedBy" Text='' CssClass="projectDetailsInfo_InitiatedBy" Font-Bold="false" />
+        </div>
+            <br />
+        <div class="projectDetails">
                     <asp:Label runat="server" ID="lbl_ReviewBt_Header" Text="Reviewed By:" />
-                    <asp:Label runat="server" ID="lbl_ReviewedBy" Text='<%# Eval("ReviewedBy") %>' />
-
+                    <asp:Label runat="server" ID="lbl_ReviewedBy" Text='' CssClass="projectDetailsInfo_ReviewedBy" Font-Bold="false" />
+        </div>
+            <br />
+        <div class="projectDetails">
                     <asp:Label runat="server" ID="lbl_Customer_Header" Text="Customer:" />
-                    <asp:Label runat="server" ID="lbl_Customer" Text='<%# Eval("Customer") %>' />
-
+                    <asp:Label runat="server" ID="lbl_Customer" Text='' CssClass="projectDetailsInfo_Customer" Font-Bold="false" />
+        </div>
+            <br />
+        <div class="projectDetails">
                     <asp:Label runat="server" ID="lbl_Department_Header" Text="Department:" />
-                    <asp:Label runat="server" ID="lbl_Department" Text='<%# Eval("Department") %>' />
-
+                    <asp:Label runat="server" ID="lbl_Department" Text='' CssClass="projectDetailsInfo_Department" Font-Bold="false" />
+        </div>
+            <br />
+        <div class="projectDetails">
                     <asp:Label runat="server" ID="lbl_Charge_Header" Text="Charge:" />
-                    <asp:Label runat="server" ID="lbl_Charge" Text='<%# Eval("Charge") %>' />
-
+                    <asp:Label runat="server" ID="lbl_Charge" Text='' CssClass="projectDetailsInfo_Charge" Font-Bold="false" />
+        </div>
+            <br />
+        <div class="projectDetails">
                     <asp:Label runat="server" ID="lbl_Status_Header" Text="Status:" />
-                    <asp:Label runat="server" ID="lbl_Status" Text='<%# Eval("Status") %>' />
-
+                    <asp:Label runat="server" ID="lbl_Status" Text='' CssClass="projectDetailsInfo_Status" Font-Bold="false" />
+        </div>
+            <br />
+        <div class="projectDetails">
                     <asp:Label runat="server" ID="lbl_ResourcesAllocated_Header" Text="Resources Allocated:" />
-                    <asp:Label runat="server" ID="lbl_ResourcesAllocated" Text='<%# Eval("ResourcesAllocated") %>' />
-
+                    <asp:Label runat="server" ID="lbl_ResourcesAllocated" Text='' CssClass="projectDetailsInfo_Resources" Font-Bold="false" />
+        </div>
+            <br />
+        <div class="projectDetails">
                     <asp:Label runat="server" ID="lbl_PercentComplete_Header" Text="Percent Complete:" />
-                    <asp:Label runat="server" ID="lbl_PercentComplete" Text='<%# Eval("PercentComplete") %>' />
+                    <asp:Label runat="server" ID="lbl_PercentComplete" Text='' CssClass="projectDetailsInfo_Percent" Font-Bold="false" />
+        </div>
 
     </div>
 

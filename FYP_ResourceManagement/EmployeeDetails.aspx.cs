@@ -13,6 +13,23 @@ namespace FYP_ResourceManagement
         protected void Page_Load(object sender, EventArgs e)
         {
             runAuthLevel();
+
+            int authLvl = Convert.ToInt32(Session["AuthLvl"]);
+
+            if (authLvl == 0 || authLvl == 3 || authLvl == 4)
+            {
+                lbl_EmployeeHeader.Text = Session["LastName"] + ", " + Session["FirstName"].ToString() + " - " + Session["JobDescription"].ToString();
+
+                hdn_EmployeeID.Value = Session["EmployeeID"].ToString();
+                lbl_EmployeeID.Text = Session["EmployeeID"].ToString();
+                lbl_Department.Text = Session["Department"].ToString();
+                lbl_Rate.Text = Session["Rate"].ToString();
+                lbl_JobDescription.Text = Session["JobDescription"].ToString();
+                lbl_HoursAssigned.Text = Session["HoursAssigned"].ToString();
+                decimal workload = Convert.ToDecimal(Session["Workload"].ToString());
+                lbl_Workload.Text = Convert.ToString(Math.Round(workload, 2));
+                lbl_ProjectsAllocated.Text = Session["ProjectsAllocated"].ToString();
+            }
         }
         private void runAuthLevel()
         {

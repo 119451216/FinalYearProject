@@ -15,139 +15,148 @@ namespace FYP_ResourceManagement
     {
 
         /// <summary>
-        /// hdn_ProjectID control.
+        /// hdn_EmployeeID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdn_ProjectID;
+        protected global::System.Web.UI.WebControls.HiddenField hdn_EmployeeID;
 
         /// <summary>
-        /// lbl_ProjectTitle_Header control.
+        /// lbl_EmployeeHeader control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_ProjectTitle_Header;
+        protected global::System.Web.UI.WebControls.Label lbl_EmployeeHeader;
 
         /// <summary>
-        /// lbl_ProjectTitle control.
+        /// lbl_EmployeeID_Header control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_ProjectTitle;
+        protected global::System.Web.UI.WebControls.Label lbl_EmployeeID_Header;
 
         /// <summary>
-        /// lbl_ProjectGroup_Header control.
+        /// lbl_EmployeeID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_ProjectGroup_Header;
+        protected global::System.Web.UI.WebControls.Label lbl_EmployeeID;
 
         /// <summary>
-        /// lbl_ProjectGroup control.
+        /// lbl_Department_Header control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_ProjectGroup;
+        protected global::System.Web.UI.WebControls.Label lbl_Department_Header;
 
         /// <summary>
-        /// lbl_ProjectNumber_Header control.
+        /// lbl_Department control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_ProjectNumber_Header;
+        protected global::System.Web.UI.WebControls.Label lbl_Department;
 
         /// <summary>
-        /// lbl_ProjectNumber control.
+        /// lbl_Rate_Header control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_ProjectNumber;
+        protected global::System.Web.UI.WebControls.Label lbl_Rate_Header;
 
         /// <summary>
-        /// lbl_ProjectSubNumber_Header control.
+        /// lbl_Rate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_ProjectSubNumber_Header;
+        protected global::System.Web.UI.WebControls.Label lbl_Rate;
 
         /// <summary>
-        /// lbl_ProjectSubNumber control.
+        /// lbl_JobDescription_Header control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_ProjectSubNumber;
+        protected global::System.Web.UI.WebControls.Label lbl_JobDescription_Header;
 
         /// <summary>
-        /// lbl_InitiatedBy_Header control.
+        /// lbl_JobDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_InitiatedBy_Header;
+        protected global::System.Web.UI.WebControls.Label lbl_JobDescription;
 
         /// <summary>
-        /// lbl_InitiatedBy control.
+        /// lbl_HoursAssigned_Header control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_InitiatedBy;
+        protected global::System.Web.UI.WebControls.Label lbl_HoursAssigned_Header;
 
         /// <summary>
-        /// lbl_ReviewBt_Header control.
+        /// lbl_HoursAssigned control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_ReviewBt_Header;
+        protected global::System.Web.UI.WebControls.Label lbl_HoursAssigned;
 
         /// <summary>
-        /// lbl_ReviewedBy control.
+        /// lbl_Workload_Header control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_ReviewedBy;
+        protected global::System.Web.UI.WebControls.Label lbl_Workload_Header;
 
         /// <summary>
-        /// lbl_Customer_Header control.
+        /// lbl_Workload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_Customer_Header;
+        protected global::System.Web.UI.WebControls.Label lbl_Workload;
 
         /// <summary>
-        /// lbl_Customer control.
+        /// lbl_ProjectsAllocated_Header control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_Customer;
+        protected global::System.Web.UI.WebControls.Label lbl_ProjectsAllocated_Header;
+
+        /// <summary>
+        /// lbl_ProjectsAllocated control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_ProjectsAllocated;
 
         /// <summary>
         /// ds_ProjectDetails control.

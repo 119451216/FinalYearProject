@@ -51,6 +51,15 @@ namespace FYP_ResourceManagement
         protected global::System.Web.UI.WebControls.Label lbl_Header;
 
         /// <summary>
+        /// lbl_RequestID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_RequestID;
+
+        /// <summary>
         /// lbl_Title control.
         /// </summary>
         /// <remarks>
@@ -78,13 +87,13 @@ namespace FYP_ResourceManagement
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Title;
 
         /// <summary>
-        /// lbl_TitleError control.
+        /// rev_Title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_TitleError;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator rev_Title;
 
         /// <summary>
         /// lbl_StartDate control.
@@ -177,22 +186,13 @@ namespace FYP_ResourceManagement
         protected global::System.Web.UI.WebControls.TextBox txt_Info;
 
         /// <summary>
-        /// lbl_Optional control.
+        /// RegularExpressionValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_Optional;
-
-        /// <summary>
-        /// lbl_InfoError control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_InfoError;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
 
         /// <summary>
         /// btn_Submit control.
@@ -202,5 +202,23 @@ namespace FYP_ResourceManagement
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_Submit;
+
+        /// <summary>
+        /// cal_Leave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar cal_Leave;
+
+        /// <summary>
+        /// gv_Events control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gv_Events;
     }
 }

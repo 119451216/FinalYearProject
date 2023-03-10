@@ -6,21 +6,48 @@
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js"></script>
 
-    <script type="module">
+    <%--<script>
+//const { requestJson } = require("@fullcalendar/core/internal");
+
         // FullCalendar - https://fullcalendar.io
+
         document.addEventListener('DOMContentLoaded', function () {
             var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                plugins: [],
-                initialView: 'dayGridMonth',
-                headerToolbar: {
-                    left: '',
-                    center: 'title',
-                    right: 'prev, next today'
-                },
-                editable: true,
-                eventLimit: true
-                //dateClick: function (date, jsEvent, view) {
+                    var calendar = new FullCalendar.Calendar(calendarEl, {
+                        plugins: [],
+                        initialView: 'dayGridMonth',
+                        //events: function (id, title, start, end, addInfo, callback) {
+                        //    $.ajax({
+                        //        url: 'Availability.aspx.cs',
+                        //        type: 'GET',
+                        //        dataType: 'json',
+                        //        success: function (data) {
+                        //            var events = $.map(data, function (event) {
+                        //                return {
+                        //                    title: event.title,
+                        //                    start: event.start,
+                        //                    end: event.end,
+                        //                    addInfo: event.addInfo
+                        //                };
+                        //            });
+                        //            callback(events);
+                        //        }
+                        //    });
+                        //},
+                        headerToolbar: {
+                            left: '',
+                            center: 'title',
+                            right: 'prev, next today'
+                        },
+                        editable: true,
+                        eventLimit: true
+                    });
+                    /*calendar.addEvents(events);*/
+            calendar.render();
+                });
+
+
+                            //dateClick: function (date, jsEvent, view) {
                 //    var title = prompt('Enter event title:');
                 //    if (title) {
                 //        $('#calendar').FullCalendar('renderEvent', {
@@ -30,27 +57,7 @@
                 //        });
                 //    }
                 //}
-            });
-            //$.ajax({
-            //    url: '/requests', // URL of the server endpoint that returns the event data
-            //    type: 'GET',
-            //    dataType: 'json',
-            //    success: function (response) {
-            //        // Iterate over the event data and create FullCalendar event objects
-            //        var events = [];
-            //        response.forEach(function (event) {
-            //            events.push({
-            //                title: event.title,
-            //                start: event.start_date,
-            //                end: event.end_date,
-            //                allDay: event.all_day
-            //            });
-            //        });
-
-            //        calendar.renderEvents(request);
-            calendar.render();
-        });
-    </script>
+    </script>--%>
 
         <asp:Button runat="server" ID="btn_Add" OnClick="btn_Add_Click" Text="Add New Request" CssClass="btn_Add shading" />
 
@@ -61,14 +68,21 @@
                     <asp:Label runat="server" ID="lbl_Header" Text="New Request Form" CssClass="lbl_Header gv_FooterTextbox" />
                 </asp:TableCell>
             </asp:TableHeaderRow>
+            <asp:TableRow HorizontalAlign="Center" Visible="false">
+                <asp:TableCell Visible="false">
+                    <asp:Label runat="server" ID="lbl_RequestID" Text='' Visible="false" />
+                </asp:TableCell>
+            </asp:TableRow>
             <asp:TableRow>
                 <asp:TableHeaderCell HorizontalAlign="Center">
                     <asp:Label runat="server" ID="lbl_Title" Text="Title:" CssClass="tbl_InputLabel" />
                 </asp:TableHeaderCell>
                 <asp:TableCell Horizontal-Align="Center">
                     <asp:TextBox ID="txt_Title" runat="server" CssClass="shading" autocomplete="off" />
-                    <asp:RequiredFieldValidator runat="server" ID="rfv_Title" ControlToValidate="txt_Title" ErrorMessage="Title is a required field." CssClass="requiredValidator" />
-                    <asp:Label runat="server" ID="lbl_TitleError" Text="Please enter a valid title." Visible="false" CssClass="errorTitle" />
+                    <div class="error_Container">
+                        <asp:RequiredFieldValidator runat="server" ID="rfv_Title" ControlToValidate="txt_Title" ErrorMessage="Title is a required field." CssClass="requiredValidator validator_Title rfv_Title" />
+                        <asp:RegularExpressionValidator ID="rev_Title" runat="server" ControlToValidate="txt_Title" ValidationExpression="[a-zA-Z ]*$" ErrorMessage="Please enter valid characters." CssClass="error requiredValidator validator_Title" />
+                    </div>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
@@ -97,8 +111,7 @@
                 </asp:TableHeaderCell>
                 <asp:TableCell>
                     <asp:TextBox runat="server" ID="txt_Info" CssClass="shading" autocomplete="off" />
-                    <asp:Label runat="server" ID="lbl_Optional" CssClass="optional" Text="(Optional)" Font-Size="Small" />
-                    <asp:Label runat="server" ID="lbl_InfoError" Text="Please enter valid information." CssClass="error" Visible="false" />
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txt_Info" ValidationExpression="[a-zA-Z ]*$" ErrorMessage="Please enter valid characters." CssClass="error requiredValidator" />
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableFooterRow HorizontalAlign="Center">
@@ -109,7 +122,24 @@
             </asp:TableFooterRow>
         </asp:Table>
     </div>
+    <div class="calendar">
+        <asp:Calendar ID="cal_Leave" runat="server" BorderWidth="1px" NextPrevFormat="FullMonth" CssClass="cal_Leave" OnSelectionChanged="cal_Leave_SelectionChanged"  Width="300px" Height="300px" >
+            <TodayDayStyle BackColor="#CCCCCC" />
+            <NextPrevStyle Font-Size="8pt" Font-Bold="true" ForeColor="#333333" VerticalAlign="Bottom" />
+            <DayHeaderStyle Font-Size="8pt" Font-Bold="True" />
+            <SelectedDayStyle ForeColor="White" BackColor="#333399" />
+            <TitleStyle Font-Size="12pt" Font-Bold="True" BorderWidth="2px" ForeColor="#333399" BorderColor="Black" BackColor="White" />
+            <OtherMonthDayStyle ForeColor="#999999" />
+        </asp:Calendar>
+    </div>
 
-    <div id="calendar"></div>
+        <asp:GridView ID="gv_Events" runat="server" AutoGenerateColumns="false" CssClass="gridviewCss gv_Events">
+            <Columns>
+                <asp:BoundField DataField="LeaveTitle" HeaderText="Title" ItemStyle-CssClass="gv_GridviewCss" />
+                <asp:BoundField DataField="LeaveStartDate" HeaderText="Start Date" ItemStyle-CssClass="gv_GridviewCss" DataFormatString="{0:dd-MMM-yyyy}" />
+                <asp:BoundField DataField="LeaveEndDate" HeaderText="End Date" ItemStyle-CssClass="gv_GridviewCss" DataFormatString="{0:dd-MMM-yyyy}" />
+                <asp:BoundField DataField="Username" HeaderText="Username" ItemStyle-CssClass="gv_GridviewCss" />
+            </Columns>
+        </asp:GridView>
 
 </asp:Content>

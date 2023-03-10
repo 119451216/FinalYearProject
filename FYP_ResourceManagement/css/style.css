@@ -88,6 +88,75 @@ td {
     font-size: medium;
 }
 
+.projectDetails {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.projectDetails_Header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.projectDetailsInfo_Title {
+    margin-left: 200px;
+    display: inline-block;
+}
+
+.projectDetailsInfo_Group {
+    margin-left: 185px;
+    display: inline-block;
+}
+
+.projectDetailsInfo_Number {
+    margin-left: 105px;
+    display: inline-block;
+}
+
+.projectDetailsInfo_SubNumber {
+    margin-left: 67px;
+    display: inline-block;
+}
+
+.projectDetailsInfo_InitiatedBy {
+    margin-left: 145px;
+    display: inline-block;
+}
+
+.projectDetailsInfo_ReviewedBy {
+    margin-left: 132px;
+    display: inline-block;
+}
+
+.projectDetailsInfo_Customer {
+    margin-left: 159px;
+    display: inline-block;
+}
+
+.projectDetailsInfo_Department {
+    margin-left: 144px;
+    display: inline-block;
+}
+
+.projectDetailsInfo_Charge {
+    margin-left: 183px;
+    display: inline-block;
+}
+
+.projectDetailsInfo_Status {
+    margin-left: 190px;
+    display: inline-block;
+}
+
+.projectDetailsInfo_Resources {
+    margin-left: 69px;
+    display: inline-block;
+}
+
+.projectDetailsInfo_Percent {
+    margin-left: 94px;
+    display: inline-block;
+}
+
 .gridview {
     border: 1px solid darkgrey;
 }
@@ -95,6 +164,21 @@ td {
 .gv_GridviewCss {
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.gv_Employees_Edit {
+    margin-bottom: 18px;
+}
+.calendar {
+    margin-top: 30px;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+.gv_Events {
+    margin-top: 30px;
+    margin-left: 455px;
+    margin-right: 200px;
 }
 
 .gv_Textbox {
@@ -122,6 +206,41 @@ td {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
+}
+
+.employeeDetails_ID {
+    margin-left: 180px;
+    display: inline-block;
+}
+
+.employeeDetails_Department {
+    margin-left: 173px;
+    display: inline-block;
+}
+
+.employeeDetails_Rate {
+    margin-left: 233px;
+    display: inline-block;
+}
+
+.employeeDetails_JobDescription {
+    margin-left: 120px;
+    display: inline-block;
+}
+
+.employeeDetails_HoursAssigned {
+    margin-left: 143px;
+    display: inline-block;
+}
+
+.employeeDetails_Workload {
+    margin-left: 200px;
+    display: inline-block;
+}
+
+.employeeDetails_ProjectsAllocated {
+    margin-left: 115px;
+    display: inline-block;
 }
 
 .tbl_NewProject {
@@ -174,6 +293,15 @@ td {
     font-size: large;
 }
 
+.error_Container {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.validator_Title {
+    display: block;
+}
+
 .errorTitle {
     color: red;
     margin-left: -133px;
@@ -182,6 +310,7 @@ td {
 
 .requiredValidator {
     color: red;
+    margin-left: 3px;
 }
 
 .imgDate {

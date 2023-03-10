@@ -49,5 +49,14 @@ namespace FYP_ResourceManagement
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource ds_Department;
+
+        /// <summary>
+        /// ds_ProjectsAllocated control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource ds_ProjectsAllocated;
     }
 }

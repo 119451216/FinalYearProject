@@ -2,32 +2,49 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
-    <asp:HiddenField ID="hdn_ProjectID" Value="" runat="server" />
+    <asp:HiddenField ID="hdn_EmployeeID" Value="" runat="server" />
 
     <!-- Employee Details Container -->
     <div class="employee_Details_Container">
 
-                    <asp:Label runat="server" ID="lbl_ProjectTitle_Header" Text="Name:" />
-                    <asp:Label runat="server" ID="lbl_ProjectTitle" Text='<%# Eval("FullName") %>' />
-
-                    <asp:Label runat="server" ID="lbl_ProjectGroup_Header" Text="Department:" />
-                    <asp:Label runat="server" ID="lbl_ProjectGroup" Text='<%# Eval("DepartmentName") %>' />
-
-                    <asp:Label runat="server" ID="lbl_ProjectNumber_Header" Text="Job Description:" />
-                    <asp:Label runat="server" ID="lbl_ProjectNumber" Text='<%# Eval("Job Description") %>' />
-
-                    <asp:Label runat="server" ID="lbl_ProjectSubNumber_Header" Text="Rate:" />
-                    <asp:Label runat="server" ID="lbl_ProjectSubNumber" Text='<%# Eval("Rate") %>' />
-
-                    <asp:Label runat="server" ID="lbl_InitiatedBy_Header" Text="Workload" />
-                    <asp:Label runat="server" ID="lbl_InitiatedBy" Text='<%# Eval("Workload") %>' />
-
-                    <asp:Label runat="server" ID="lbl_ReviewBt_Header" Text="Remaining Hours:" />
-                    <asp:Label runat="server" ID="lbl_ReviewedBy" Text='<%# Eval("RemainingHours") %>' />
-
-                    <asp:Label runat="server" ID="lbl_Customer_Header" Text="Projects Allocated:" />
-                    <asp:Label runat="server" ID="lbl_Customer" Text='<%# Eval("ProjectsAllocated") %>' />
-
+        <h2>
+            <asp:Label runat="server" ID="lbl_EmployeeHeader" CssClass="employeeDetails_Header" Font-Bold="true" />
+        </h2>
+        
+        <div class="employeeDetails">
+            <asp:Label runat="server" ID="lbl_EmployeeID_Header" Text="Employee ID:" />
+            <asp:Label runat="server" ID="lbl_EmployeeID" Text='' CssClass="employeeDetails_ID" />
+        </div>
+            <br />
+        <div class="employeeDetails">
+            <asp:Label runat="server" ID="lbl_Department_Header" Text="Department:" />
+            <asp:Label runat="server" ID="lbl_Department" Text='' CssClass="employeeDetails_Department" />
+        </div>
+            <br />
+        <div class="employeeDetails">
+                    <asp:Label runat="server" ID="lbl_Rate_Header" Text="Rate:" />
+                    <asp:Label runat="server" ID="lbl_Rate" Text='' CssClass="employeeDetails_Rate" />
+        </div>
+            <br />
+        <div class="employeeDetails">
+            <asp:Label runat="server" ID="lbl_JobDescription_Header" Text="Job Description:" />
+            <asp:Label runat="server" ID="lbl_JobDescription" Text='' CssClass="employeeDetails_JobDescription" />
+        </div>
+            <br />
+        <div class="employeeDetails">
+            <asp:Label runat="server" ID="lbl_HoursAssigned_Header" Text="Hours Assigned:" />
+            <asp:Label runat="server" ID="lbl_HoursAssigned" Text='' CssClass="employeeDetails_HoursAssigned" />
+        </div>
+            <br />
+        <div class="employeeDetails">
+            <asp:Label runat="server" ID="lbl_Workload_Header" Text="Workload:" />
+            <asp:Label runat="server" ID="lbl_Workload" Text='' CssClass="employeeDetails_Workload" />
+        </div>
+            <br />
+        <div class="employeeDetails">
+            <asp:Label runat="server" ID="lbl_ProjectsAllocated_Header" Text="Projects Allocated:" />
+            <asp:Label runat="server" ID="lbl_ProjectsAllocated" Text='' CssClass="employeeDetails_ProjectsAllocated" />
+        </div>
     </div>
 
     <!-- SQL Data Sources -->
