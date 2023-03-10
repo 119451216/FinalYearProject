@@ -31,7 +31,6 @@ namespace FYP_ResourceManagement
                 lbl_Charge.Text = Session["ProjectCharge"].ToString();
                 lbl_Status.Text = Session["ProjectStatus"].ToString();
                 lbl_Department.Text = Session["Department"].ToString();
-                lbl_ResourcesAllocated.Text = Session["TotalResourcesAllocated"].ToString();
                 decimal percentComplete = Convert.ToDecimal(Session["PercentComplete"].ToString());
                 lbl_PercentComplete.Text = Convert.ToString(Math.Round(percentComplete, 2));
             }

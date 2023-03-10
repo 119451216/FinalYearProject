@@ -77,7 +77,7 @@
 
                 <asp:TemplateField HeaderText="Details" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Center" ItemStyle-VerticalAlign="Middle" HeaderStyle-CssClass="gv_GridviewCss">
                     <ItemTemplate>
-                        <asp:ImageButton runat="server" ID="btn_Edit" OnClick="btn_Edit_Click" CommandArgument='<%# Container.DataItemIndex %>' CommandName="btn_Details" ImageUrl="~/img/icons/baseline_description_black_24dp.png" />
+                        <asp:ImageButton runat="server" ID="btn_Edit" OnClick="btn_Edit_Click" CommandName="btn_Details" ImageUrl="~/img/icons/baseline_description_black_24dp.png" />
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>

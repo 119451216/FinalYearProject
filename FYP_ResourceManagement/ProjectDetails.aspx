@@ -62,11 +62,6 @@
         </div>
             <br />
         <div class="projectDetails">
-                    <asp:Label runat="server" ID="lbl_ResourcesAllocated_Header" Text="Resources Allocated:" />
-                    <asp:Label runat="server" ID="lbl_ResourcesAllocated" Text='' CssClass="projectDetailsInfo_Resources" Font-Bold="false" />
-        </div>
-            <br />
-        <div class="projectDetails">
                     <asp:Label runat="server" ID="lbl_PercentComplete_Header" Text="Percent Complete:" />
                     <asp:Label runat="server" ID="lbl_PercentComplete" Text='' CssClass="projectDetailsInfo_Percent" Font-Bold="false" />
         </div>

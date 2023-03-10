@@ -44,7 +44,9 @@ namespace FYP_ResourceManagement
                 txt_ProjectSubNumber.Text = "0";
 
                 conn.Close();
-            } 
+            }
+
+            ddl_Customer_Repeat.Items.Insert(0, new ListItem("Select...", ""));
         }
 
         protected void BindGv()
@@ -58,7 +60,6 @@ namespace FYP_ResourceManagement
             conn.Close();
 
             ddl_Customer_Repeat.DataSource = dt;
-            ddl_Customer_Repeat.Items.Insert(0, new ListItem("Select...", ""));
             ddl_ProjectNumber_Filter.Items.Insert(0, new ListItem("Select...", ""));
             ddl_Customer_Repeat.DataBind();
         }
@@ -86,6 +87,7 @@ namespace FYP_ResourceManagement
             ddl_ProjectNumber_Filter.DataSource = dt;
             ddl_ProjectNumber_Filter.DataTextField = "ProjectNumber";
             ddl_ProjectNumber_Filter.DataValueField = "ProjectID";
+            ddl_ProjectNumber_Filter.Items.Insert(0, new ListItem("Select...", ""));
             Session["ProjectID"] = projectID;
             ddl_ProjectNumber_Filter.DataBind();
         }
@@ -96,7 +98,7 @@ namespace FYP_ResourceManagement
             tbl_NewProject_Repeat.Visible = true;
             ddl_Customer_Repeat.Visible = true;
 
-                BindGv();
+            BindGv();
         }
 
         protected void ddl_ProjectCustomer_Repeat_OnSelectedIndexChanged (object sender, EventArgs e)

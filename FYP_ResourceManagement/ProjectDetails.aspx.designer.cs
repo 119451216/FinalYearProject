@@ -213,24 +213,6 @@ namespace FYP_ResourceManagement
         protected global::System.Web.UI.WebControls.Label lbl_Status;
 
         /// <summary>
-        /// lbl_ResourcesAllocated_Header control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_ResourcesAllocated_Header;
-
-        /// <summary>
-        /// lbl_ResourcesAllocated control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_ResourcesAllocated;
-
-        /// <summary>
         /// lbl_PercentComplete_Header control.
         /// </summary>
         /// <remarks>

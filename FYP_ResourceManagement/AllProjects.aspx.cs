@@ -15,7 +15,10 @@ namespace FYP_ResourceManagement
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
                 gv_Projects.DataBind();
+            }
         }
 
         protected void btn_Edit_Click(object sender, EventArgs e)
@@ -52,10 +55,9 @@ namespace FYP_ResourceManagement
                     Session["ProjectCharge"] = reader.GetValue(8);
                     Session["ProjectStatus"] = reader.GetValue(9);
                     Session["Department"] = reader.GetValue(10);
-                    Session["TotalResourcesAllocated"] = reader.GetValue(11);
-                    Session["HoursCommitted"] = reader.GetValue(12);
-                    Session["HoursExpected"] = reader.GetValue(13);
-                    Session["PercentComplete"] = reader.GetValue(14);
+                    Session["HoursCommitted"] = reader.GetValue(11);
+                    Session["HoursExpected"] = reader.GetValue(12);
+                    Session["PercentComplete"] = reader.GetValue(13);
                 }
                 reader.Close();
 
