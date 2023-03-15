@@ -33,15 +33,6 @@ namespace FYP_ResourceManagement
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl li_NewProject;
 
         /// <summary>
-        /// li_Workload control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl li_Workload;
-
-        /// <summary>
         /// li_Admin control.
         /// </summary>
         /// <remarks>

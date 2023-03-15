@@ -45,8 +45,6 @@ namespace FYP_ResourceManagement
 
                 conn.Close();
             }
-
-            ddl_Customer_Repeat.Items.Insert(0, new ListItem("Select...", ""));
         }
 
         protected void BindGv()
@@ -60,17 +58,21 @@ namespace FYP_ResourceManagement
             conn.Close();
 
             ddl_Customer_Repeat.DataSource = dt;
-            ddl_ProjectNumber_Filter.Items.Insert(0, new ListItem("Select...", ""));
             ddl_Customer_Repeat.DataBind();
+            ddl_Customer_Repeat.Items.Insert(0, new ListItem("Select...", ""));
+            ddl_ProjectNumber_Filter.Items.Insert(0, new ListItem("Select...", ""));
         }
 
         protected void BindProjNo()
         {
+            int customerID = ddl_Customer_Repeat.SelectedIndex;
             int projectID = 0;
             DataTable dt = new DataTable();
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ND_ResourceManagement"].ConnectionString);
             conn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT DISTINCT [ProjectNumber], [ProjectID], [ProjectSubNumber] FROM [Projects] WHERE [CustomerID] = '" + ddl_Customer_Repeat.SelectedIndex + "'", conn);
+            SqlCommand cmd = new SqlCommand("P01007_PROJECT_New_ProjectNo_Filter", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@customerID", customerID);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
 
             SqlDataReader reader = cmd.ExecuteReader();
@@ -87,9 +89,9 @@ namespace FYP_ResourceManagement
             ddl_ProjectNumber_Filter.DataSource = dt;
             ddl_ProjectNumber_Filter.DataTextField = "ProjectNumber";
             ddl_ProjectNumber_Filter.DataValueField = "ProjectID";
-            ddl_ProjectNumber_Filter.Items.Insert(0, new ListItem("Select...", ""));
             Session["ProjectID"] = projectID;
             ddl_ProjectNumber_Filter.DataBind();
+            ddl_ProjectNumber_Filter.Items.Insert(0, new ListItem("Select...", ""));
         }
 
         protected void chk_RepeatCustomer_OnChecked (object sender, EventArgs e)
@@ -133,6 +135,47 @@ namespace FYP_ResourceManagement
             projSubNo = projSubNo + 1;
             txt_ProjectSubNumber_Repeat.Text = Convert.ToString(projSubNo);
             txt_ProjectID_Repeat.Text = Convert.ToString(Session["ProjectID"]);
+
+            BindDepartment();
+        }
+
+        private void BindDepartment()
+        {
+            string projectID = Session["ProjectID"].ToString();
+            string departmentID = string.Empty;
+            string department = string.Empty;
+
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ND_ResourceManagement"].ConnectionString);
+            conn.Open();
+            SqlCommand cmdID= new SqlCommand("SELECT [DepartmentID] FROM [Projects] WHERE [ProjectID] = @projectID", conn);
+            cmdID.CommandType = CommandType.Text;
+            cmdID.Parameters.AddWithValue("@projectID", projectID);
+
+            SqlDataReader readerID = cmdID.ExecuteReader();
+
+            while (readerID.Read())
+            {
+                string value = readerID.GetString(0);
+                departmentID = value;
+            }
+
+            readerID.Close();
+
+            SqlCommand cmd = new SqlCommand("SELECT [DepartmentName] FROM [Project_Department] WHERE [DepartmentID] = @departmentID", conn);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@departmentID", departmentID);
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                string result = reader.GetString(0);
+                department = result;
+            }
+
+            reader.Close();
+            conn.Close();
+            txt_Department_Repeat.Text = department;
+            txt_Department_Repeat.DataBind();
         }
 
         protected void btn_Add_Click (object sender, EventArgs e)

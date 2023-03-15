@@ -141,24 +141,6 @@ namespace FYP_ResourceManagement
         protected global::System.Web.UI.WebControls.Label lbl_Workload;
 
         /// <summary>
-        /// lbl_ProjectsAllocated_Header control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_ProjectsAllocated_Header;
-
-        /// <summary>
-        /// lbl_ProjectsAllocated control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_ProjectsAllocated;
-
-        /// <summary>
         /// ds_ProjectDetails control.
         /// </summary>
         /// <remarks>

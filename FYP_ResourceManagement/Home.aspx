@@ -9,8 +9,7 @@
         <h4 class="index_Header">All Projects</h4>
         <a href="~/AllProjects.aspx" class="index_Link" runat="server">All Projects</a>
         <br />
-        <a href="~/NewProject.aspx" class="index_Link" runat="server">New Project</a>
-        <br />
+        <a href="~/NewProject.aspx" id="txt_NewProject" class="index_Link" runat="server">New Project</a>
         <br />
         <a href="~/EmployeeList.aspx" class="index_Header" runat="server">Personnel</a>
         <br />

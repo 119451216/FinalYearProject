@@ -28,7 +28,6 @@ namespace FYP_ResourceManagement
                 lbl_HoursAssigned.Text = Session["HoursAssigned"].ToString();
                 decimal workload = Convert.ToDecimal(Session["Workload"].ToString());
                 lbl_Workload.Text = Convert.ToString(Math.Round(workload, 2));
-                lbl_ProjectsAllocated.Text = Session["ProjectsAllocated"].ToString();
             }
         }
         private void runAuthLevel()

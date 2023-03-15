@@ -8,10 +8,10 @@
     <table class="tbl_NewProject" id="tbl_NewProject" runat="server">
         <tr>
             <td>
-                <asp:Label runat="server" ID="lbl_RepeatCustomer" Text="Repeat Customer:" Font-Bold="true" />
+                <asp:Label runat="server" ID="lbl_RepeatCustomer" Text="Repeat Customer:" Font-Bold="true" CssClass="lbl_NewProject repeatCustomer" />
             </td>
             <td>
-                <asp:CheckBox runat="server" ID="chk_RepeatCustomer" OnCheckedChanged="chk_RepeatCustomer_OnChecked" AutoPostBack="true" />
+                <asp:CheckBox runat="server" ID="chk_RepeatCustomer" OnCheckedChanged="chk_RepeatCustomer_OnChecked" AutoPostBack="true"  />
             </td>
         </tr>
         <tr>
@@ -66,6 +66,14 @@
         </tr>
         <tr>
             <td>
+                <asp:Label runat="server" ID="lbl_Department" Text="Department:" Font-Bold="true" CssClass="lbl_NewProject" />
+            </td>
+            <td>
+                <asp:DropDownList runat="server" ID="ddl_Department" DataSourceID="ds_Department" DataTextField="DepartmentName" DataValueField="DepartmentID" CssClass="shading" />
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <asp:Label runat="server" ID="lbl_InitiatedBy" Text="Initiated By:" Font-Bold="true" CssClass="lbl_NewProject" />
             </td>
             <td>
@@ -115,7 +123,7 @@
     <table class="tbl_NewProject" id="tbl_NewProject_Repeat" runat="server" visible="false">
         <tr>
             <td>
-                <asp:Label runat="server" ID="lbl_Customer_Repeat" Text="Customer:" Font-Bold="true" />
+                <asp:Label runat="server" ID="lbl_Customer_Repeat" Text="Customer:" Font-Bold="true" CssClass="lbl_NewProject" />
             </td>
             <td>
                 <asp:DropDownList runat="server" ID="ddl_Customer_Repeat" DataTextField="Customer" DataValueField="CustomerID" CssClass="shading" AutoPostBack="true" OnSelectedIndexChanged="ddl_ProjectCustomer_Repeat_OnSelectedIndexChanged" />
@@ -135,6 +143,14 @@
             </td>
             <td>
                 <asp:TextBox runat="server" ID="txt_ProjectSubNumber_Repeat" ReadOnly="true" Enabled="false" AutoPostBack="true" Text="" CssClass="shading" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Label runat="server" ID="lbl_Department_Repeat" Text="Department:" Font-Bold="true" CssClass="lbl_NewProject" />
+            </td>
+            <td>
+                <asp:TextBox runat="server" ID="txt_Department_Repeat" ReadOnly="true" Enabled="false" AutoPostBack="true" Text="" CssClass="shading" />
             </td>
         </tr>
         <tr>
@@ -223,6 +239,8 @@
     <asp:SqlDataSource runat="server" ID="ds_Employee" ConnectionString="<%$ ConnectionStrings:ND_ResourceManagement %>" SelectCommand="P02001_EMPLOYEE_Select" SelectCommandType="StoredProcedure" />
 
     <asp:SqlDataSource runat="server" ID="ds_Customers" ConnectionString="<%$ ConnectionStrings:ND_ResourceManagement %>" SelectCommand="P01006_PROJECT_New_Customer" SelectCommandType="StoredProcedure" />
+
+    <asp:SqlDataSource runat="server" ID="ds_Department" ConnectionString="<%$ ConnectionStrings:ND_ResourceManagement %>" SelectCommand="P01009_PROJECT_Department" SelectCommandType="StoredProcedure" />
 
     <asp:SqlDataSource runat="server" ID="ds_Charge" ConnectionString="<%$ ConnectionStrings:ND_ResourceManagement %>" SelectCommand="P04001_CHARGE_Select" SelectCommandType="StoredProcedure" />
 

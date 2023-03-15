@@ -116,7 +116,6 @@ namespace FYP_ResourceManagement
                     Session["JobDescription"] = reader.GetValue(5);
                     Session["HoursAssigned"] = reader.GetValue(6);
                     Session["Workload"] = reader.GetValue(7);
-                    Session["ProjectsAllocated"] = reader.GetValue(8);
                 }
                 reader.Close();
 

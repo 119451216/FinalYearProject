@@ -91,10 +91,27 @@ namespace FYP_ResourceManagement
             rfv_Title.Visible = false;
             rev_Title.Visible = false;
 
-            int requestID = Convert.ToInt32(lbl_RequestID.Text);
-            requestID = requestID + 1;
-            string username = User.Identity.Name;
+            int requestID = 0;
+
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ND_ResourceManagement"].ConnectionString);
+            conn.Open();
+            SqlCommand cmdID = new SqlCommand("SELECT MAX([RequestID]) FROM [Requests]", conn);
+            cmdID.CommandType = CommandType.Text;
+
+            SqlDataReader reader = cmdID.ExecuteReader();
+
+            while (reader.Read())
+            {
+                int value = reader.GetInt32(0);
+                requestID = Convert.ToInt32(value);
+            }
+
+            reader.Close();
+
+            requestID = requestID + 1;
+
+            string username = User.Identity.Name;
+
             SqlCommand cmd = new SqlCommand("[dbo].[P09001_REQUEST_Insert]", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@requestID", requestID);
@@ -103,7 +120,6 @@ namespace FYP_ResourceManagement
             cmd.Parameters.AddWithValue("@endDate", cal_EndDatePicker.SelectedDate);
             cmd.Parameters.AddWithValue("@add_Info", txt_Info.Text);
             cmd.Parameters.AddWithValue("@username", username);
-            conn.Open();
             int apt = cmd.ExecuteNonQuery();
             conn.Close();
 

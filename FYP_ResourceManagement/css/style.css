@@ -214,27 +214,27 @@ td {
 }
 
 .employeeDetails_Department {
-    margin-left: 173px;
+    margin-left: 190px;
     display: inline-block;
 }
 
 .employeeDetails_Rate {
-    margin-left: 233px;
+    margin-left: 250px;
     display: inline-block;
 }
 
 .employeeDetails_JobDescription {
-    margin-left: 120px;
+    margin-left: 155px;
     display: inline-block;
 }
 
 .employeeDetails_HoursAssigned {
-    margin-left: 143px;
+    margin-left: 155px;
     display: inline-block;
 }
 
 .employeeDetails_Workload {
-    margin-left: 200px;
+    margin-left: 180px;
     display: inline-block;
 }
 

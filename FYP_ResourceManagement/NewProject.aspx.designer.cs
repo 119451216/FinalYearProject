@@ -177,6 +177,24 @@ namespace FYP_ResourceManagement
         protected global::System.Web.UI.WebControls.Label lbl_ProjectCustomer_Error;
 
         /// <summary>
+        /// lbl_Department control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_Department;
+
+        /// <summary>
+        /// ddl_Department control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_Department;
+
+        /// <summary>
         /// lbl_InitiatedBy control.
         /// </summary>
         /// <remarks>
@@ -346,6 +364,24 @@ namespace FYP_ResourceManagement
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_ProjectSubNumber_Repeat;
+
+        /// <summary>
+        /// lbl_Department_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_Department_Repeat;
+
+        /// <summary>
+        /// txt_Department_Repeat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_Department_Repeat;
 
         /// <summary>
         /// lbl_ProjectID_Repeat control.
@@ -562,6 +598,15 @@ namespace FYP_ResourceManagement
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource ds_Customers;
+
+        /// <summary>
+        /// ds_Department control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource ds_Department;
 
         /// <summary>
         /// ds_Charge control.

@@ -29,12 +29,10 @@ namespace FYP_ResourceManagement
                 case 1:
                     li_Admin.Visible = false;
                     li_NewProject.Visible = false;
-                    li_Workload.Visible = false;
                     break;
                 case 2:
                     li_Admin.Visible = false;
                     li_NewProject.Visible = false;
-                    li_Workload.Visible = false;
                     break;
                 case 3:
                     
@@ -45,7 +43,6 @@ namespace FYP_ResourceManagement
                 default:
                     li_Admin.Visible = false;
                     li_NewProject.Visible = false;
-                    li_Workload.Visible = false;
                     break;
             }
         }

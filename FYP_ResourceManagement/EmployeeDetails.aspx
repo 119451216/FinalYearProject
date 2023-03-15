@@ -37,13 +37,8 @@
         </div>
             <br />
         <div class="employeeDetails">
-            <asp:Label runat="server" ID="lbl_Workload_Header" Text="Workload:" />
+            <asp:Label runat="server" ID="lbl_Workload_Header" Text="Workload (%):" />
             <asp:Label runat="server" ID="lbl_Workload" Text='' CssClass="employeeDetails_Workload" />
-        </div>
-            <br />
-        <div class="employeeDetails">
-            <asp:Label runat="server" ID="lbl_ProjectsAllocated_Header" Text="Projects Allocated:" />
-            <asp:Label runat="server" ID="lbl_ProjectsAllocated" Text='' CssClass="employeeDetails_ProjectsAllocated" />
         </div>
     </div>
 
