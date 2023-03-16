@@ -44,6 +44,8 @@ namespace FYP_ResourceManagement
             cmd.Parameters.AddWithValue("@messageApprove", messageApprove);
             cmd.Parameters.AddWithValue("@issuedBy", usernameLoggedIn);
             cmd.Parameters.AddWithValue("@date", dateTime);
+
+cmd.Parameters.AddWithValue("@username", username);
             cmd_Message.ExecuteNonQuery();
             
             conn.Close();
@@ -82,6 +84,8 @@ namespace FYP_ResourceManagement
             cmd.Parameters.AddWithValue("@messageDisapprove", messageDisapprove);
             cmd.Parameters.AddWithValue("@issuedBy", usernameLoggedIn);
             cmd.Parameters.AddWithValue("@date", dateTime);
+
+cmd.Parameters.AddWithValue("@username", username);
             cmd_Message.ExecuteNonQuery();
 
             conn.Close();
