@@ -131,6 +131,13 @@ namespace FYP_ResourceManagement
             cal_Leave.Visible = true;
             tbl_Input.Visible = false;
             btn_Add.Visible = true;
+
+            Session["RequestID"] = requestID;
+            Session["Title"] = txt_Title.Text;
+            Session["StartDate"] = txt_StartDate.Text;
+            Session["EndDate"] = txt_EndDate.Text;
+            Session["AddInfo"] = txt_Info.Text;
+            Session["RequestUser"] = username;
         }
     }
 }
